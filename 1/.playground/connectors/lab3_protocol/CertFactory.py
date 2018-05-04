@@ -22,7 +22,7 @@ def getPrivateKeyForAddr(addr):
 def getCertsForAddr(addr):
     certs = []
     if addr == "20181.2.2.2":
-        with open(path + "/certs/ccpriv.key", "rb") as fp:
+        with open(path + "/certs/cc_cert", "rb") as fp:
             certs.append(fp.read())
         fp.close()
         # with open(path + "/certs/signed.cert", "rb") as fp:
@@ -30,25 +30,25 @@ def getCertsForAddr(addr):
         # fp.close()
         return certs
     if addr == "20181.2.2.3":
-        with open(path + "/certs/city_privkey", "rb") as fp:
+        with open(path + "/certs/city_cert", "rb") as fp:
             certs.append(fp.read())
         fp.close()
         # with open(path + "/certs/signed.cert", "rb") as fp:
         #     certs.append((fp.read()))
         # fp.close()
         return certs
-    # if addr == "20181.666.2.15":
-    #     with open(path + "/certs/15.cert", "rb") as fp:
-    #         certs.append(fp.read())
-    #     fp.close()
+    if addr == "20181.2.2.4":
+        with open(path + "/certs/4.cert", "rb") as fp:
+            certs.append(fp.read())
+        fp.close()
     #     with open(path + "/certs/signed.cert", "rb") as fp:
     #         certs.append((fp.read()))
     #     fp.close()
     #     return certs
-    # if addr == "20181.666.2.16":
-    #     with open(path + "/certs/16.cert", "rb") as fp:
-    #         certs.append(fp.read())
-    #     fp.close()
+    if addr == "20181.2.2.5":
+        with open(path + "/certs/5.cert", "rb") as fp:
+            certs.append(fp.read())
+        fp.close()
     #     with open(path + "/certs/signed.cert", "rb") as fp:
     #         certs.append((fp.read()))
     #     fp.close()

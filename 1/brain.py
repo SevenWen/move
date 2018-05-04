@@ -14,7 +14,7 @@ def getNextMessage(translator, buffer):
 def brainLoop():
     gameSocket = open("game://", "rb+")
 #% TEMPLATE-ON
-    ccSocketName = "pls://20181.666.2.13:10013"
+    ccSocketName = "pls://20181.2.2.2:10013"
 #% TEMPLATE-OFF
     try:
         ccSocket = open(ccSocketName,"rb+")
